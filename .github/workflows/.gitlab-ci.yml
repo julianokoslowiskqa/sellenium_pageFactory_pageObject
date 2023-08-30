@@ -1,0 +1,11 @@
+image: maven:3-jdk-8
+
+stages:
+  - test
+
+maven-test:
+  stage: test
+  script: 
+    - mvn test
+  only:
+    - main
